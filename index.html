@@ -7,51 +7,63 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header id="header">
-      <div class="container nav-container">
-        <a href="#home" class="logo">Raphael<span>.dev</span></a>
+    <header id="topo-site">
+      <div class="limite-largura flex-nav">
+        <a href="#inicio" class="marca-pessoal">Raphael<span>.dev</span></a>
 
-        <div class="nav-controls">
-          <button id="theme-toggle" aria-label="Alternar Tema">🌙</button>
-          <button id="btn-mobile" aria-label="Abrir Menu" aria-expanded="false">
-            <span id="hamburger"></span>
+        <div class="ajustes-nav">
+          <button id="alternador-visual" aria-label="Alternar Tema">
+            Tema🌙
+          </button>
+          <button
+            id="gatilho-mobile"
+            aria-label="Abrir Menu"
+            aria-expanded="false"
+          >
+            <span id="icone-menu"></span>
           </button>
         </div>
 
-        <nav id="nav">
-          <ul id="menu" role="menu">
-            <li><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
-            <li><a href="#formacao" class="nav-link">Formação</a></li>
-            <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
-            <li><a href="#contato" class="nav-link">Contato</a></li>
+        <nav id="navegacao">
+          <ul id="lista-menu" role="menu">
+            <li><a href="#sobre-mim" class="item-link">Sobre mim</a></li>
+            <li>
+              <a href="#percurso-academico" class="item-link">Formação</a>
+            </li>
+            <li><a href="#meu-trabalho" class="item-link">Portfólio</a></li>
+            <li><a href="#fale-comigo" class="item-link">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section id="home" class="section">
-        <div class="container hero-content">
-          <div class="hero-text">
+      <section id="inicio" class="bloco-conteudo">
+        <div class="limite-largura">
+          <div class="chamada-principal">
             <h1>Olá, eu sou <br /><span>Raphael</span></h1>
             <p>
               Desenvolvedor com foco em criar soluções web eficientes, limpas e
               responsivas.
             </p>
-            <div class="hero-buttons">
-              <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
-              <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+            <div class="acoes-hero">
+              <a href="#meu-trabalho" class="botao-acao botao-cheio"
+                >Ver Portfólio</a
+              >
+              <a href="#fale-comigo" class="botao-acao botao-vazado"
+                >Fale Comigo</a
+              >
             </div>
           </div>
         </div>
       </section>
 
-      <section id="sobre-mim" class="section bg-light">
-        <div class="container">
-          <h2 class="section-title">Sobre Mim</h2>
+      <section id="sobre-mim" class="bloco-conteudo fundo-suave">
+        <div class="limite-largura">
+          <h2 class="titulo-secao">Sobre Mim</h2>
 
-          <div class="sobre-grid">
-            <div class="sobre-texto">
+          <div class="grade-sobre">
+            <div class="descricao-perfil">
               <p>
                 <strong>Apresentação:</strong> Estudante de Análise e
                 Desenvolvimento de Sistemas com interesse em resolução de
@@ -60,10 +72,10 @@
                 de tecnologia através de um estágio, focando no meu aprendizado
                 contínuo e na evolução técnica, com o objetivo em contribuir
                 para o sucesso de equipes de desenvolvimento enquanto consolido
-                minhas habilidades práticas
+                minhas habilidades práticas.
               </p>
             </div>
-            <div class="sobre-contato">
+            <div class="infos-contato">
               <p><strong>Nome: </strong>Raphael Zibetti Resko</p>
               <p><strong>Email: </strong>rapharesko@gmail.com</p>
               <p>
@@ -79,29 +91,29 @@
             </div>
           </div>
 
-          <hr class="divisor-sobre" />
+          <hr class="linha-decorativa" />
 
-          <div class="sobre-skills-full">
+          <div class="area-habilidades">
             <h3>Habilidades Técnicas</h3>
-            <div class="skills-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">React</span>
-              <span class="tag">Node.Js</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">Git & GitHub</span>
-              <span class="tag">Lógica de Programação</span>
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS3</span>
+            <div class="agrupador-tags">
+              <span class="etiqueta-tech">JavaScript</span>
+              <span class="etiqueta-tech">React</span>
+              <span class="etiqueta-tech">Node.Js</span>
+              <span class="etiqueta-tech">MongoDB</span>
+              <span class="etiqueta-tech">Git & GitHub</span>
+              <span class="etiqueta-tech">Lógica de Programação</span>
+              <span class="etiqueta-tech">HTML5</span>
+              <span class="etiqueta-tech">CSS3</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="formacao" class="section">
-        <div class="container">
-          <h2 class="section-title">Formação</h2>
-          <div class="formacao-grid">
-            <div class="card-formacao">
+      <section id="percurso-academico" class="bloco-conteudo">
+        <div class="limite-largura">
+          <h2 class="titulo-secao">Formação</h2>
+          <div class="grade-ensino">
+            <div class="bloco-estudo">
               <h3>Educação Recente</h3>
               <p>
                 <strong>Curso:</strong> Análise e Desenvolvimento de Sistemas
@@ -112,7 +124,7 @@
               </p>
               <p><strong>Status:</strong> Cursando...</p>
             </div>
-            <div class="card-formacao">
+            <div class="bloco-estudo">
               <h3>Cursos Extracurriculares</h3>
               <ul>
                 <li>
@@ -131,13 +143,12 @@
                 </li>
               </ul>
             </div>
-            <div class="card-formacao">
+            <div class="bloco-estudo">
               <h3>Idiomas</h3>
               <ul>
                 <li><strong>Português:</strong> Nativo</li>
                 <li>
-                  <strong>Inglês:</strong> Intermediário (Leitura técnica
-                  avançada)
+                  <strong>Inglês:</strong> Intermediário (Leitura e Escrita)
                 </li>
               </ul>
             </div>
@@ -145,13 +156,18 @@
         </div>
       </section>
 
-      <section id="portfolio" class="section bg-light">
-        <div class="container">
-          <h2 class="section-title">Portfólio</h2>
-          <div class="projetos-grid">
-            <article class="card-projeto">
-              <div class="card-img" style="background-color: #3498db"></div>
-              <div class="card-content">
+      <section id="meu-trabalho" class="bloco-conteudo fundo-suave">
+        <div class="limite-largura">
+          <h2 class="titulo-secao">Portfólio</h2>
+          <div class="grade-portfolio">
+            <article class="projeto-item">
+              <div
+                class="capa-projeto"
+                style="
+                  background-image: url(&quot;assets/apigerenciamento.png&quot;);
+                "
+              ></div>
+              <div class="info-projeto">
                 <h3>Api de Gerenciamento</h3>
                 <p>
                   Projeto de estudo de uma API REST para gerenciamento de
@@ -161,16 +177,19 @@
                   <a
                     href="https://github.com/Raphael2005x/user-api-study"
                     target="_blank"
-                    class="link-projeto"
+                    class="ancora-projeto"
                     >Ver no GitHub ➔</a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="card-projeto">
-              <div class="card-img" style="background-color: #2ecc71"></div>
-              <div class="card-content">
+            <article class="projeto-item">
+              <div
+                class="capa-projeto"
+                style="background-image: url(&quot;assets/relogio.png&quot;)"
+              ></div>
+              <div class="info-projeto">
                 <h3>Relógio Digital</h3>
                 <p>
                   Projeto simples de um relógio digital em tempo real, que exibe
@@ -180,7 +199,7 @@
                   <a
                     href="https://github.com/Raphael2005x/Clock"
                     target="_blank"
-                    class="link-projeto"
+                    class="ancora-projeto"
                     >Ver no GitHub ➔</a
                   >
                 </div>
@@ -190,27 +209,39 @@
         </div>
       </section>
 
-      <section id="contato" class="section">
-        <div class="container">
-          <h2 class="section-title">Contato</h2>
-          <form id="form-contato" class="contato-form" novalidate>
-            <div class="form-group">
-              <input type="text" id="nome" placeholder="Seu Nome completo" />
-              <span class="erro-msg" id="erro-nome"></span>
+      <section id="fale-comigo" class="bloco-conteudo">
+        <div class="limite-largura">
+          <h2 class="titulo-secao">Contato</h2>
+          <form id="form-fale-conosco" class="container-form" novalidate>
+            <div class="campo-entrada">
+              <input
+                type="text"
+                id="txt-nome"
+                placeholder="Seu Nome completo"
+              />
+              <span class="aviso-validacao" id="msg-erro-nome"></span>
             </div>
-            <div class="form-group">
-              <input type="email" id="email" placeholder="usuario@gmail.com" />
-              <span class="erro-msg" id="erro-email"></span>
+            <div class="campo-entrada">
+              <input
+                type="email"
+                id="txt-email"
+                placeholder="usuario@gmail.com"
+              />
+              <span class="aviso-validacao" id="msg-erro-email"></span>
             </div>
-            <div class="form-group">
+            <div class="campo-entrada">
               <textarea
-                id="mensagem"
+                id="txt-mensagem"
                 placeholder="Sua Mensagem"
                 rows="5"
               ></textarea>
-              <span class="erro-msg" id="erro-mensagem"></span>
+              <span class="aviso-validacao" id="msg-erro-mensagem"></span>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">
+            <button
+              type="submit"
+              class="botao-acao botao-cheio"
+              style="width: 100%"
+            >
               Enviar Mensagem
             </button>
           </form>
@@ -219,18 +250,23 @@
     </main>
 
     <footer>
-      <div class="container">
-        <p>&copy; 2026 Raphael. Desenvolvido do zero com HTML, CSS e JS.</p>
+      <div class="limite-largura">
+        <p>
+          &copy; 2026 Raphael. Currículo Web desenvolvido com HTML/CSS/JS. sem
+          framework
+        </p>
       </div>
     </footer>
 
-    <div id="modal-sucesso" class="modal">
-      <div class="modal-content">
-        <span class="close-modal">&times;</span>
+    <div id="pop-confirmacao" class="camada-modal">
+      <div class="caixa-interna">
+        <span class="fechar-janela">&times;</span>
         <h2>Sucesso!</h2>
         <p>Mensagem enviada com sucesso!</p>
-        <button class="btn btn-primary" id="btn-ok-modal">OK</button>
+        <button class="botao-acao botao-cheio" id="btn-finalizar">OK</button>
       </div>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
